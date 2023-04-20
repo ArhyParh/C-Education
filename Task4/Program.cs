@@ -2,14 +2,7 @@
 	// 456 -> 6
 	// 782 -> 2
 	// 918 -> 8
-Console.WriteLine("Введите число: ");
+Console.WriteLine("Введите 3х значное число: ");
 int number = int.Parse(Console.ReadLine());
-while(number>=100)
-{
-    number -=100;
-}
-while(number>=10) 
-{
-    number -= 10;
-}
-Console.WriteLine(number);
+if (1000> number && number > 99){Console.WriteLine(number%10);}
+else {Console.WriteLine("Вы ввели некорректное значение!!");}
